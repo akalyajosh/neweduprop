@@ -37,23 +37,30 @@
 							<a href="./index.html"><img src="img/sakela_logo.png" alt=""></a>
 						</div>
 					</div>
-					<div class="col-lg-10 col-md-10">
-						<div class="header__nav">
+					<div class="col-lg-8 col-md-8">
+						<div class="header__nav justify-content-center">
 							<nav class="header__menu mobile-menu">
 								<ul>
 									<li class="active"><a href="./index.html">Home</a></li>
-									<li><a href="#">Publish AD</a></li>
+									<li><a href="publish-form.html">Publish AD</a></li>
 									<li><a href="#">FAQ</a></li>
 									<li><a href="./blog.html">Blog</a></li>
 								</ul>
 							</nav>
-							<div class="header__menu__right">
-								
-								<a href="#" class="login login-user"><i class="fa fa-user"></i></a>
-								
-								
-								
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 text-right">
+						<div class="header__menu__right header__nav_login pr-5">
+							<div class="dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-user"></i>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#" id="loginuser">Login</a>
+									<a class="dropdown-item" href="#" id="signout">Signout</a>
+								</div>
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -648,9 +655,7 @@
 								</div>
 								<button type="button" class="btn btn-primary float-right" id="verify_otp">Verify</button>
 							</div>
-							<div class="modal-footer" style="display:none;">
-								<button type="button" class="btn btn-secondary mx-auto close-login" data-dismiss="modal">Close</button>
-							</div>
+							
 						</form>
 					</div>
 				</div>
@@ -659,6 +664,7 @@
 		<!-- Footer Section End -->
 		<!-- Js Plugins -->
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.nice-select.min.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
@@ -670,15 +676,6 @@
 		<script src="js/main.js"></script>
 		<script src="js/loader.js"></script>
 		<script>
-			$(window).on('load',function(){
-				if(localStorage.getItem('myNumber') == ''){
-					$('#myModal').modal('show');
-					$('#featured_property_section').hide();
-					}else{
-					$('#myModal').modal('hide');
-					$('#featured_property_section').show();
-				}
-			});
 			(function($) {
 				$.fn.countTo = function(options) {
 					options = options || {};
