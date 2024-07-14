@@ -47,8 +47,7 @@
 							<nav class="header__menu mobile-menu">
 								<ul>
 									<li class="active"><a href="./index.html">Home</a></li>
-									<li><a href="./listing.html">Login</a></li>
-									<li><a href="#">Register For a Free Account</a></li>
+									
 									<li><a href="#">Publish AD</a></li>
 									<li><a href="#">FAQ</a></li>
 									<li><a href="./blog.html">Blog</a></li>
@@ -664,6 +663,34 @@
 				</div>
 			</div>
 		</footer>
+		
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login Form</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter Phone Number">
+    
+  </div>
+  
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 		<!-- Footer Section End -->
 		
 		<!-- Js Plugins -->
@@ -678,6 +705,13 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
 		<script>
+		$(window).on('load',function(){
+    var delayMs = 1500; // delay in milliseconds
+    
+    setTimeout(function(){
+        $('#myModal').modal('show');
+    }, delayMs);
+});
 			(function($) {
 				$.fn.countTo = function(options) {
 					options = options || {};
