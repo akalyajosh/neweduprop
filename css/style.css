@@ -275,10 +275,13 @@ ol {
 }
 
 .header__nav {
+	text-align: center;
+	padding: 30px 0;
+}
+.header__nav_login {
 	text-align: right;
 	padding: 30px 0;
 }
-
 .header__menu {
 	display: inline-block;
 }
@@ -386,7 +389,21 @@ ol {
 .slicknav_menu {
 	display: none;
 }
-
+.header__nav_login .dropdown-menu{
+	margin-left: -20px !important;
+    width: 100px;
+    padding: 0px 10px 0px 10px;
+	min-width: 7rem;
+}
+.header__nav_login .dropdown-item{
+	text-align:center;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background:none;
+}
+.dropdown-item.active, .dropdown-item:active{
+	background:none;
+}
 /*---------------------
   Hero
 -----------------------*/
