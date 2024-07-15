@@ -56,8 +56,8 @@
 									<i class="fa fa-user"></i>
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Login</a>
-									<a class="dropdown-item" href="#">Signout</a>
+									<a class="dropdown-item" href="#" id="loginuser">Login</a>
+									<a class="dropdown-item" href="#" id="signout">Signout</a>
 								</div>
 							</div>
 							
@@ -655,9 +655,7 @@
 								</div>
 								<button type="button" class="btn btn-primary float-right" id="verify_otp">Verify</button>
 							</div>
-							<div class="modal-footer" style="display:none;">
-								<button type="button" class="btn btn-secondary mx-auto close-login" data-dismiss="modal">Close</button>
-							</div>
+							
 						</form>
 					</div>
 				</div>
@@ -678,19 +676,6 @@
 		<script src="js/main.js"></script>
 		<script src="js/loader.js"></script>
 		<script>
-			$(window).on('load',function(){
-				if(localStorage.getItem('myNumber') == ''){
-					$('#myModal').modal('show');
-					$('#featured_property_section').hide();
-					////$('.login-btn').css('display', 'contents');
-					//$('.login-user').css('display', 'none');
-					}else{
-					$('#myModal').modal('hide');
-					//$('.login-btn').css('display', 'none');
-					//$('.login-user').css('display', 'contents');
-					$('#featured_property_section').show();
-				}
-			});
 			(function($) {
 				$.fn.countTo = function(options) {
 					options = options || {};
