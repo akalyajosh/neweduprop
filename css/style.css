@@ -3285,3 +3285,15 @@ padding-top:2%;
 		margin-bottom: 5px;
 	}
 }
+.publish-form{
+background-color: #cccccc0f;
+}
+.publish-form {
+	margin-bottom:-100px;
+}
+.publish-form .btn-link{
+	color:#000;
+}
+.publish-form .card-header{
+	background-color:#fff;
+}
