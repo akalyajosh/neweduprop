@@ -71,7 +71,7 @@
 		<section class="spad">
 			<div class="publish-form pt-5 pb-5">
 				<div class="container pt-5 pb-5 border mt-3">
-					<form id="publish-form">
+					<form id="publish-form" method="POST" action="controller/list-add.php">
 						<div id="accordion">
 							<div class="card">
 								<div class="card-header" id="headingOne">
@@ -85,20 +85,20 @@
 									<div class="card-body">
 										<div class="container-md">
 											<div class="form-group">
-												<label for="exampleInput">Name</label>
-												<input type="text" class="form-control" required id="name" name="name">
+												<label for="seller_name">Name</label>
+												<input type="text" class="form-control" required id="seller_name" name="seller_name">
 											</div>
 											<div class="form-group">
 												<label for="exampleInputEmail1">E-mail</label>
 												<input type="email" class="form-control" required id="email" name="email" aria-describedby="emailHelp">
 											</div>
 											<div class="form-check">
-												<input type="checkbox" class="form-check-input" id="exampleCheck1">
-												<label class="form-check-label" for="exampleCheck1">Show e-mail on the listing page</label>
+												<input type="checkbox" class="form-check-input" id="show_email">
+												<label class="form-check-label" for="show_email">Show e-mail on the listing page</label>
 											</div>
 											<div class="form-group">
-												<label for="exampleInputNum">Phone</label>
-												<input type="text" class="form-control" required id="mobile"  name="mobile">
+												<label for="mobile">Phone</label>
+												<input type="text" class="form-control" required id="mobile" name="mobile">
 											</div>
 										</div>
 									</div>
@@ -115,12 +115,12 @@
 										<div class="card-body">
 											<div class="container-md">
 												<div class="form-group">
-													<label for="exampleInput">Category</label>
-													<input type="text" class="form-control" required id="name" name="name">
+													<label for="category">Category</label>
+													<input type="text" class="form-control" required id="category" name="category">
 												</div>
 												<div class="form-group">
-													<label for="exampleInputEmail1">Title</label>
-													<input type="email" class="form-control" required id="email" name="email" aria-describedby="emailHelp">
+													<label for="title">Title</label>
+													<input type="text" class="form-control" required id="title" name="title" aria-describedby="title">
 												</div>
 												<div class="input-group mb-3">
 													<div class="input-group-prepend">
@@ -132,12 +132,12 @@
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="exampleInputNum">Price</label>
-													<input type="text" class="form-control" required id="mobile"  name="mobile">
+													<label for="price">Price</label>
+													<input type="text" class="form-control" required id="price"  name="price">
 												</div>
 												<div class="form-group">
 													<label for="description">Description</label>
-													<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+													<textarea class="form-control" id="description" rows="3"></textarea>
 												</div>
 											</div>
 										</div>
